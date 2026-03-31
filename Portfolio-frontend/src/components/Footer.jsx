@@ -6,7 +6,7 @@ export default function Footer() {
         {/* SOCIAL ICONS */}
         <div className="flex justify-center gap-6 mb-6 text-xl">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/AmanChauhan29"
             target="_blank"
             className="hover:text-blue-500 transition"
           >
@@ -14,7 +14,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/aman-chauhan7"
             target="_blank"
             className="hover:text-blue-500 transition"
           >
@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="mailto:your@email.com"
+            href="mailto:iamanchauhan29@gmail.com"
             className="hover:text-blue-500 transition"
           >
             <i className="fas fa-envelope"></i>

@@ -19,7 +19,7 @@ export default function Navbar() {
       `}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-white">Aman.dev</h1>
+        <h1 className="text-2xl font-bold text-white">Aman Chauhan</h1>
 
         <ul className="hidden md:flex gap-8 text-gray-300 font-medium">
             <li><a href="#home" className="hover:text-white transition">Home</a></li>

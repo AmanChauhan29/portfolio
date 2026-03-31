@@ -50,7 +50,10 @@ export default function About() {
             {openCard === "journey" && (
               <p className="text-gray-400 mt-4 leading-relaxed transition-all duration-300">
                 I started exploring development, cloud, automation, and system
-                design. I’ve worked on projects involving Kubernetes, Kafka,
+                design from my college days, which is started since 2020. I have created many projects in Reactjs, and Express.js for college projects,
+                and later on, I started working on DevOps and Cloud projects.
+                My professional journey began in 2024, and since then, I have been deeply involved in building cloud infrastructure, automation pipelines, and scalable systems.
+                I’ve worked on projects involving Kubernetes, Kafka,
                 GStreamer, autoscaling video processing pipelines, and secure
                 distributed systems.
               </p>
