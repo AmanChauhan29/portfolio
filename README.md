@@ -64,7 +64,7 @@ Portfolio/
 
 3. **Setup Backend**
    ```bash
-   cd ../backend
+   cd backend
    pip install fastapi uvicorn
    uvicorn app.main:app --reload
    ```
