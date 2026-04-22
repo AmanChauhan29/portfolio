@@ -12,9 +12,30 @@ app.add_middleware(
 
 
 projects = [
-    {"id": 1, "title": "WittyEMS", "desc": "Energy management system"},
-    {"id": 2, "title": "AI Video Analytics", "desc": "CCTV monitoring with GStreamer + Kafka"},
-    {"id": 3, "title": "DevOps Portfolio", "desc": "Full-stack project using FastAPI + React"},
+    {
+        "id": 1,
+        "title": "Real-time CCTV Video Processing System",
+        "desc": "A scalable GStreamer + Kafka + Kubernetes pipeline for real-time video ingestion, chunking, autoscaling, and analytics.",
+        "tech": ["GStreamer", "Kafka", "Kubernetes", "MinIO"],
+        "github": "https://github.com/AmanChauhan29",
+        "demo": "#",
+    },
+    {
+        "id": 2,
+        "title": "DevOps CI/CD Automation",
+        "desc": "ne using Jenkins, Docker, SonarQube, ArgoCD, and Kubernetes with GitOps workflow.",
+        "tech": ["Jenkins", "Docker", "ArgoCD", "K8s"],
+        "github": "https://github.com/AmanChauhan29",
+        "demo": "#",
+    },
+    {
+        "id": 3,
+        "title": "Portfolio Website",
+        "desc": "A modern developer portfolio built with React and Tailwind CSS, featuring animations and responsive UI.",
+        "tech": ["React", "Tailwind", "Vite"],
+        "github": "https://github.com/AmanChauhan29",
+        "demo": "#",
+    }
 ]
 
 @app.get("/")

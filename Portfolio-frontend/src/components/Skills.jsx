@@ -1,17 +1,20 @@
+import { FaReact, FaPython, FaDocker, FaAws, FaLinux, FaGitAlt, FaDatabase  } from "react-icons/fa";
+import { SiJavascript, SiKubernetes, SiFastapi, SiTerraform, SiJenkins, SiApachekafka } from "react-icons/si";
+
 export default function Skills() {
   const skills = [
-    { name: "React", icon: "⚛️" },
-    { name: "Jenkins", icon: "🟩" },
-    { name: "JavaScript", icon: "🟨" },
-    { name: "Databases", icon: "🗄️" },
-    { name: "Docker", icon: "🐳" },
-    { name: "Kubernetes", icon: "☸️" },
-    { name: "AWS", icon: "☁️" },
-    { name: "Git & GitHub", icon: "🔧" },
-    { name: "Terraform", icon: "📦" },
-    { name: "GStreamer", icon: "🎥" },
-    { name: "Kafka", icon: "📡" },
-    { name: "Linux", icon: "🐧" },
+    { name: "React", icon: <FaReact size={40} color="#61DAFB" /> },
+    { name: "Jenkins", icon: <SiJenkins size={40} color="#FFE0B2" /> },
+    { name: "JavaScript", icon: <SiJavascript size={40} color="#F7DF1E" /> },
+    { name: "Databases", icon: <FaDatabase size={40} color="#ab3792" /> },
+    { name: "Docker", icon: <FaDocker size={40} color="#2496ED" /> },
+    { name: "Kubernetes", icon: <SiKubernetes size={40} color="#326CE5" /> },
+    { name: "AWS", icon: <FaAws size={40} color="#FF9900" /> },
+    { name: "Git & GitHub", icon: <FaGitAlt size={40} color="#F05032" /> },
+    { name: "Terraform", icon: <SiTerraform size={40} color="#623CE4" /> },
+    { name: "GStreamer/FFmpeg", icon: <FaPython size={40} color="#3776AB" /> },
+    { name: "Kafka", icon: <SiApachekafka size={40} color="#2496ED" /> },
+    { name: "Linux", icon: <FaLinux size={40} color="#FCC625" /> },
   ];
 
   return (
