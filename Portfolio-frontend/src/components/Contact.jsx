@@ -1,88 +1,92 @@
-import { useState } from "react";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaPhone,
+  FaFileDownload,
+} from "react-icons/fa";
 
 export default function Contact() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Form submitted! (Backend not connected yet)");
-  };
+  // Social/contact links data
+  const contacts = [
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/aman-chauhan7",
+      color: "hover:text-blue-500",
+    },
+    {
+      name: "GitHub",
+      icon: <FaGithub />,
+      link: "https://github.com/AmanChauhan29",
+      color: "hover:text-gray-400",
+    },
+    {
+      name: "Email",
+      icon: <FaEnvelope />,
+      link: "mailto:iamanchauhan29@gmail.com",
+      color: "hover:text-red-400",
+    },
+    {
+      name: "Phone",
+      icon: <FaPhone />,
+      link: "tel:+919935074990",
+      color: "hover:text-green-400",
+    },
+    {
+      name: "Resume",
+      icon: <FaFileDownload />,
+      link: "/Resume.pdf",
+      color: "hover:text-yellow-400",
+    },
+  ];
 
   return (
     <section
       id="contact"
-      className="bg-[#0d0d0d] text-white py-24 px-6 md:px-12 flex justify-center"
+      className="bg-[#0d0d0d] text-white py-24 px-6 md:px-12"
     >
-      <div className="max-w-4xl w-full">
-        <h2 className="text-4xl font-bold text-center mb-10">
-          Contact <span className="text-blue-500">Me</span>
+      <div className="max-w-5xl mx-auto">
+
+        {/* Heading */}
+        <h2 className="text-4xl font-bold text-center mb-4">
+          Connect <span className="text-blue-500">With Me</span>
         </h2>
 
-        <form
-          onSubmit={handleSubmit}
-          className="bg-[#111] border border-gray-700 rounded-2xl p-8 shadow-lg"
-        >
-          {/* NAME */}
-          <div className="mb-6">
-            <label className="block text-gray-300 mb-2 text-sm">
-              Your Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="Enter your full name"
-              className="w-full px-4 py-3 rounded-lg bg-[#1b1b1b] border border-gray-700 text-white focus:border-blue-500 focus:outline-none"
-            />
-          </div>
+        {/* Subtitle */}
+        <p className="text-gray-400 text-center mb-14 max-w-2xl mx-auto">
+          Feel free to connect with me through any platform below.
+          I’m always open to discussing DevOps, Backend Engineering,
+          Cloud, Kubernetes, and exciting opportunities.
+        </p>
 
-          {/* EMAIL */}
-          <div className="mb-6">
-            <label className="block text-gray-300 mb-2 text-sm">
-              Your Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="Enter your email address"
-              className="w-full px-4 py-3 rounded-lg bg-[#1b1b1b] border border-gray-700 text-white focus:border-blue-500 focus:outline-none"
-            />
-          </div>
+        {/* Contact Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-          {/* MESSAGE */}
-          <div className="mb-6">
-            <label className="block text-gray-300 mb-2 text-sm">
-              Your Message
-            </label>
-            <textarea
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Write your message here..."
-              rows="5"
-              className="w-full px-4 py-3 rounded-lg bg-[#1b1b1b] border border-gray-700 text-white focus:border-blue-500 focus:outline-none"
-            ></textarea>
-          </div>
+          {contacts.map((contact) => (
 
-          {/* SUBMIT */}
-          <button
-            type="submit"
-            className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition"
-          >
-            Send Message
-          </button>
-        </form>
+            <a
+              key={contact.name}
+              href={contact.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`bg-[#111] border border-gray-700 rounded-2xl p-6 flex flex-col items-center justify-center gap-4 transition duration-300 hover:scale-105 hover:border-blue-500 ${contact.color}`}
+            >
+
+              {/* Icon */}
+              <div className="text-5xl">
+                {contact.icon}
+              </div>
+
+              {/* Name */}
+              <h3 className="text-xl font-semibold">
+                {contact.name}
+              </h3>
+
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );

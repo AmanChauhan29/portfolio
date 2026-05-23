@@ -1,7 +1,7 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Real-time CCTV Video Processing System",
+      title: "Streaming Video Service",
       description:
         "A scalable GStreamer + Kafka + Kubernetes pipeline for real-time video ingestion, chunking, autoscaling, and analytics.",
       tech: ["GStreamer", "Kafka", "Kubernetes", "MinIO"],
@@ -9,9 +9,9 @@ export default function Projects() {
       demo: "#",
     },
     {
-      title: "DevOps CI/CD Automation",
+      title: "Directus Deployment",
       description:
-        "Fully automated pipeline using Jenkins, Docker, SonarQube, ArgoCD, and Kubernetes with GitOps workflow.",
+        "A Fully Automated CI/CD github Actions pipeline for Creating the Infrastructure in aws and Deploy the Application using SSH and Running Docker Containers inside the EC2 instance.",
       tech: ["Jenkins", "Docker", "ArgoCD", "K8s"],
       github: "https://github.com/AmanChauhan29",
       demo: "#",
@@ -22,6 +22,14 @@ export default function Projects() {
         "A modern developer portfolio built with React and Tailwind CSS, featuring animations and responsive UI.",
       tech: ["React", "Tailwind", "Vite"],
       github: "https://github.com/AmanChauhan29",
+      demo: "#",
+    },
+    {
+      title: "Food Ordering Backend",
+      description:
+        "A RESTful API for a food ordering platform built with Python (FastAPI), MongoDB, and Docker, featuring JWT authentication and CRUD operations.",
+      tech: ["Python", "FastAPI", "MongoDB", "Docker", "JWT", "Redis"],
+      github: "https://github.com/AmanChauhan29/backend-service",
       demo: "#",
     },
   ];
